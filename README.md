@@ -6,6 +6,7 @@ We are going to create a restful API using Java and Spring Boot. We will use Git
 
 For writing the code and documentation, I am getting help from GitHub Copilot. 
 
+
 ## Java Application overview
 
 This is a Java Spring Boot application. The application has following depndencies:
@@ -37,3 +38,27 @@ There are following ways Copilot suggests code in the editor:
 6. Fix the code
 7. Generate codes
 8. Generate test
+
+### Copilot suggestions in the chat
+
+I asked questions and Copilot suggested code based on the question.
+
+## Pre-requisites
+
+- Java 17
+- Maven
+- IDE - I used Visual Studio Code please refere to list of Copilot supported IDEs [here](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot?tool=azure_data_studio)
+- h2 database - I used h2 database for this application. You can use any other database as well.
+- Postman - for testing the API
+- Git - for version control
+- GitHub - for hosting the code
+- Copilot - for writing the code and documentation 
+
+## About Copilot suggested code
+
+Most of suggested codes are in-editor suggestions, I use comments to get suggestions and you can see the comments in the code and try to reproduce the same in your code.
+
+You can follow the instructions [here](docs/tutorials/README.md). 
+
+
+
