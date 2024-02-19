@@ -60,5 +60,8 @@ Most of suggested codes are in-editor suggestions, I use comments to get suggest
 
 You can follow the instructions in [Getting Started](docs/tutorials/README.md). 
 
+## Accepting, rejecting or modifying Copilot suggestions
+
+You have freedom to accept or deny the suggested code, or modify the code either manually or ask Copilot to modify it itself.
 
 
