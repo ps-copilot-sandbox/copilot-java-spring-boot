@@ -58,7 +58,7 @@ I asked questions and Copilot suggested code based on the question.
 
 Most of suggested codes are in-editor suggestions, I use comments to get suggestions and you can see the comments in the code and try to reproduce the same in your code.
 
-You can follow the instructions [here](docs/tutorials/README.md). 
+You can follow the instructions in [Getting Started](docs/tutorials/README.md). 
 
 
 
