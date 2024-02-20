@@ -215,3 +215,78 @@ You can list all employees from database using the following curl command:
 ```bash
 curl --location --request GET 'http://localhost:8080/employees/employees'
 ```
+
+
+## Listing a single employee
+
+I asked Copilot to suggest the code for the controller to list a single employee. This is the question I asked Copilot:
+
+
+```java
+// Create a new endpoint to get a single employee from the database by id path: /employees/{id}
+// The endpoint should accept an HTTP GET request and a path variable of type Long
+// The endpoint should return the employee with the given id
+
+@GetMapping("/{id}")
+public Employee getEmployeeById(@PathVariable Long id) {
+    return employeeRepository.findById(id).orElse(null);
+}
+```
+
+### update an employee
+
+I asked Copilot to suggest the code for the controller to update an employee. This is the question I asked Copilot:
+
+```java
+// Create a new endpoint to update an employee in the database by id path: /employees/{id}
+// The endpoint should accept an HTTP PUT request, a path variable of type Long, and a request body of type Employee
+// The endpoint should return the updated employee
+
+@PutMapping("/{id}")
+public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
+    Employee existingEmployee = employeeRepository.findById(id).orElse(null);
+    if (existingEmployee != null) {
+        existingEmployee.setName(employee.getName());
+        existingEmployee.setEmail(employee.getEmail());
+        return employeeRepository.save(existingEmployee);
+    }
+    return null;
+}
+```
+
+Curl command to update an employee:
+
+```bash
+curl --location --request PUT 'http://localhost:8080/employees/1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "john",
+    "email": "john@mail.com"
+}'
+```
+
+### delete an employee
+
+I asked Copilot to suggest the code for the controller to delete an employee. This is the question I asked Copilot:
+
+```java 
+// Create a new endpoint to delete an employee from the database by id path: /employees/{id}
+// The endpoint should accept an HTTP DELETE request and a path variable of type Long
+// The endpoint should return the deleted employee
+
+@DeleteMapping("/{id}")
+public Employee deleteEmployee(@PathVariable Long id) {
+    Employee existingEmployee = employeeRepository.findById(id).orElse(null);
+    if (existingEmployee != null) {
+        employeeRepository.delete(existingEmployee);
+        return existingEmployee;
+    }
+    return null;
+}
+```
+
+Curl command to delete an employee:
+
+```bash
+    curl --location --request DELETE 'http://localhost:8080/employees/1'
+```
