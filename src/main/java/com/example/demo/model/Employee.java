@@ -1,18 +1,19 @@
 package com.example.demo.model;
 import lombok.Data;
+import lombok.Getter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Column;
+import lombok.Setter;
+
+import jakarta.persistence.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "employees")
+@Getter
+@Setter
 public class Employee {
 
     @Id
@@ -25,4 +26,9 @@ public class Employee {
 
     @Column(name = "email")
     private String email;
+
+    public Employee(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 }

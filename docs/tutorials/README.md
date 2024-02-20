@@ -65,6 +65,9 @@ You can find this version of api in the branch `api-static`.
 
 ## Improve our API to get data from the database
 
+
+### Creating an entity class and a repository
+
 We will improve our API to get data from the database. To do so, we will ask Copilot to suggeest the code for `Employee` entity, `EmployeeRepository`. 
 
 First create a class in `com.example.demo.model` package called `Employee` and ask Copilot to suggest the code for the class. There are 2 ways to ask Copilot to suggest the code for the class: Chat or inline suggestions. I used chat to ask Copilot to suggest the code for the class. 
@@ -115,8 +118,16 @@ public class Employee {
 
     @Column(name = "email")
     private String email;
+
+    // adding this constructor to create an instance of the class with the name and email fields
+    // this is suggested by Copilot after copying the code above
+    public Employee(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
 }
 ```
+
 
 Create a new class `EmployeeRepository` in the package `com.example.demo.repository` and ask Copilot to suggest the code for the class. This is the question I asked Copilot:
 
@@ -135,7 +146,53 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 }
 ```
 
+### Include the repository in the controller
+
+Now we need to include the repository in the controller. I asked Copilot to suggest the code for the controller. This is the question I asked Copilot:
+
+```text
+create a new method in the EmployeeController to get all employees from the database using the EmployeeRepository
+```
+
+This is the code suggested by Copilot: (in-line suggestion)
+
+```java
+ @Autowired
+    private EmployeeRepository employeeRepository;
 
 
+    @GetMapping("/employees")
+    public List<Employee> getAllEmployees() {
+        return employeeRepository.findAll();
+    }
+```
+
+
+### add a new endpoint to add a new employee
+
+I asked Copilot to suggest the code for the controller to add a new employee. This is the question I asked Copilot:
+
+```Java
+    // Create a new endpoint to add a new employee to the database endpoint is /add
+    // The method should accept an HTTP POST request and a request body of type Employee
+    // The method should return the added employee
+    @PostMapping("/add")
+    public Employee addEmployee(@RequestBody Employee employee) {
+        return employeeRepository.save(employee);
+    }
+```
+
+### adding a new employee
+
+here is the curl command to add a new employee:
+
+```bash
+curl --location 'http://localhost:8080/employees/add' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "siavash",
+    "email": "siavash@mail.com"
+}'
+```
 
 
