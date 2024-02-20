@@ -6,6 +6,16 @@ We are going to create a restful API using Java and Spring Boot. We will use Git
 
 For writing the code and documentation, I am getting help from GitHub Copilot. 
 
+## What is GitHub Copilot?
+
+GitHub Copilot is an AI pair programmer that helps you write code faster. It is available as IDE extensions. It is also available in other IDEs. You can learn more about GitHub Copilot [here](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot).
+
+There are 2 types of copilot extensions:
+- GitHub Copilot for in-editor suggestions
+- GitHub Copilot for chat suggestions
+
+
+
 
 ## Java Application overview
 
