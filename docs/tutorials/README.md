@@ -136,10 +136,6 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 ```
 
 
-```text
-
-
-We will use `EmployeeRepository` to get data from the database. To do so, we will create a new class `EmployeeRepository` and use `EmployeeRepository` in the `EmployeeController` to get data from the database.
 
 
 
