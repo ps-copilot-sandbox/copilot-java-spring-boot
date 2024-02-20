@@ -51,7 +51,7 @@ Copilot suggests code in the editor in the following ways:
 
 ### Copilot suggestions in the chat
 
-I asked questions and Copilot suggested code based on the question.
+I can ask questions and Copilot suggested code based on the question. very similar to the in-editor suggestions.
 
 ## Pre-requisites
 
