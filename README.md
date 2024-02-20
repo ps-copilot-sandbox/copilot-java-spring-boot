@@ -38,7 +38,7 @@ I used these 2 methods to get help from Copilot:
 
 ### Copilot suggestions in the editor
 
-There are following ways Copilot suggests code in the editor:
+Copilot suggests code in the editor in the following ways:
 
 1. When I write a comment, Copilot suggests code based on the comment.
 2. When I write a method, Copilot suggests the method body.
