@@ -7,11 +7,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 import com.github.fridujo.sample.mvc.MvcApplication;
 
 @SpringBootApplication
+
 public class DemoApplication {
 
 	public static void main(String[] args) {
 		
-		ConfigurableApplicationContext context = SpringApplication.run(MvcApplication.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
 	}
 
 }

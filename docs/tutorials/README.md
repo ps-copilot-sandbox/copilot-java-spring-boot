@@ -24,11 +24,11 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
 Main class is `com.example.demo.DemoApplication`
 
-### Add a controller
+### Add a controller - create a controller with static data
 
 Add a controller empty class `com.example.demo.controller.EmployeeController`
 
-I ask Copilot to suggest the code for the controller and it suggested the following code:
+I ask Copilot to suggest the code for the controller and it suggested the following code: This is the first version of API
 
 ![image](https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/b54d02ff-f39c-4537-a6b3-738e1aa3e95a)
 ![image](https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/6508506a-fb94-43af-b37e-83ad6cf6daec)
@@ -59,7 +59,8 @@ public class EmployeeController {
         return employees;
     }
 }
+```
 
-
+## Modify 
 
 
