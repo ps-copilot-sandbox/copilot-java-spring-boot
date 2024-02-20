@@ -61,6 +61,85 @@ public class EmployeeController {
 }
 ```
 
-## Modify 
+You can find this version of api in the branch `api-static`.
+
+## Improve our API to get data from the database
+
+We will improve our API to get data from the database. To do so, we will ask Copilot to suggeest the code for `Employee` entity, `EmployeeRepository`. 
+
+First create a class in `com.example.demo.model` package called `Employee` and ask Copilot to suggest the code for the class. There are 2 ways to ask Copilot to suggest the code for the class: Chat or inline suggestions. I used chat to ask Copilot to suggest the code for the class. 
+
+This is my question to Copilot:
+
+```text
+create an entity class Employee using lombok
+"@Data: generate getters and setters
+@AllArgsConstructor: generate constructor with all fields
+@NoArgsConstructor: generate constructor with no fields
+@Entity: mark this class as an entity class
+@Table: map this class to a table named employees
+@Id: mark this field as the primary key
+@GeneratedValue: generate the value for this field automatically
+@Column: map this field to a column named id
+@Column: map this field to a column named name
+@Column: map this field to a column named email
+"
+```
+
+This is the code suggested by Copilot:
+
+```java
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Column;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "employees")
+public class Employee {
+
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private Long id;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "email")
+    private String email;
+}
+```
+
+Create a new class `EmployeeRepository` in the package `com.example.demo.repository` and ask Copilot to suggest the code for the class. This is the question I asked Copilot:
+
+```text
+ create EmployeeRepository JPA repository interface manging Employee entity class in the same package
+```
+
+This is the code suggested by Copilot:
+
+```java
+mport org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+}
+```
+
+
+```text
+
+
+We will use `EmployeeRepository` to get data from the database. To do so, we will create a new class `EmployeeRepository` and use `EmployeeRepository` in the `EmployeeController` to get data from the database.
+
 
 
