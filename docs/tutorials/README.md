@@ -7,6 +7,18 @@ To follow the instructions in this tutorial, you need to switch to the branch `a
 - `main` - This branch contains the initial code for the application.
 - `api` - This branch contains the restful API for the application.
 
+## How to run the application
+
+I use `mvn clean spring-boot:run` to run the application. Alternatively, you can run the application from your IDE, or build the application and run the jar file from your terminal or deploy to a web server.
+
+### Application URL
+
+The base url for the application is `http://localhost:8080/employees`
+
+- Static endpoint to get employees: `http://localhost:8080/employees/all`
+- Endpoint to get employees from the database: `http://localhost:8080/employees/employees`
+- Endpint to add an employee: `http://localhost:8080/employees/add`
+
 ## Application confoguration
 
 ### application.properties
@@ -195,4 +207,11 @@ curl --location 'http://localhost:8080/employees/add' \
 }'
 ```
 
+### list all employees
+
+You can list all employees from database using the following curl command:
+
+```bash
+curl --location --request GET 'http://localhost:8080/employees/employees'
+```
 
