@@ -47,9 +47,15 @@ I ask Copilot to suggest the code for the controller and it suggested the follow
 ![image](https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/6508506a-fb94-43af-b37e-83ad6cf6daec)
 
 ```java
-// create a new controller class called EmployeeController
-// and annotate it with @RestController
+// A controller class called EmployeeController
+// using @RestController annotation to
 // add RequestMapping to /employees
+// add a method to get all employees from the database
+// add a method to add a new employee to the database
+// add a method to get a single employee from the database by id
+// add a method to update an employee in the database by id
+// add a method to delete an employee from the database by id
+// add a method to get a list of employees
 
 package com.example.demo.controller;
 
