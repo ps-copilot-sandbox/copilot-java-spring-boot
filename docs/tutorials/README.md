@@ -6,6 +6,7 @@ To follow the instructions in this tutorial, you need to switch to the branch `a
 
 - `main` - This branch contains the initial code for the application.
 - `api` - This branch contains the restful API for the application.
+- `api-static` - This branch contains the initial version of the restful API for the application.
 
 ## How to run the application
 
