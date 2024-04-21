@@ -1,5 +1,9 @@
 # Creating a Java restful API with GitHub Copilot
 
+## Note
+
+Please refrain from merging branches. The main branch serves as the structure for a Spring Boot application, while each individual branch represents a specific app. These apps are developed based on the main branch and are crafted with the assistance of GitHub Copilot.
+
 ## Background
 
 We are going to create a restful API using Java and Spring Boot. We will use GitHub Copilot to help us write the code. The Api will be a simple CRUD application that will allow us to create, read, update and delete employees from a database.
