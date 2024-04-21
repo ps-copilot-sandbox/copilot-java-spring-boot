@@ -35,7 +35,7 @@ in the branch `api` we will create a restful API that will allow us to create, r
 
 <img width="1608" alt="image" src="https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/ca7fdb8b-9e09-44dd-b07b-2ad0caf3eba6">
 
-I utilized the [Spring Boot Initializr](https://start.spring.io/) t) to generate the structure of this application. This tool provides a straightforward web UI that enables you to configure your application's foundational aspects. Within the web UI, you have the option to specify the language, project type, Spring Boot version, and add the necessary dependencies. 
+I utilized the [Spring Boot Initializr](https://start.spring.io/) to generate the structure of this application. This tool provides a straightforward web UI that enables you to configure your application's foundational aspects. Within the web UI, you have the option to specify the language, project type, Spring Boot version, and add the necessary dependencies. 
 
 ## How Copilot helped me to write the code?
 
@@ -83,4 +83,3 @@ You can follow the instructions in [Getting Started](docs/tutorials/README.md).
 ## Accepting, rejecting or modifying Copilot suggestions
 
 You have freedom to accept or deny the suggested code, or modify the code either manually or ask Copilot to modify it itself.
-
