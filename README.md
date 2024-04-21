@@ -27,6 +27,12 @@ This is a Java Spring Boot application. The application has following depndencie
   
 in the branch `api` we will create a restful API that will allow us to create, read, update and delete employees from a database. 
 
+## Using Spring Boot Initializr to generate the application structure?
+
+<img width="1608" alt="image" src="https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/ca7fdb8b-9e09-44dd-b07b-2ad0caf3eba6">
+
+I utilized the [Spring Boot Initializr](https://start.spring.io/) t) to generate the structure of this application. This tool provides a straightforward web UI that enables you to configure your application's foundational aspects. Within the web UI, you have the option to specify the language, project type, Spring Boot version, and add the necessary dependencies. 
+
 ## How Copilot helped me to write the code?
 
 I used GitHub Copilot to write the code and documentation. I used Copilot suggestions in the `editor` and via `chat`. 
