@@ -31,7 +31,7 @@ This is a Java Spring Boot application. The application has following depndencie
   
 in the branch `api` we will create a restful API that will allow us to create, read, update and delete employees from a database. 
 
-## Using Spring Boot Initializr to generate the application structure?
+## Using Spring Boot Initializr to generate the application structure
 
 <img width="1608" alt="image" src="https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/ca7fdb8b-9e09-44dd-b07b-2ad0caf3eba6">
 
