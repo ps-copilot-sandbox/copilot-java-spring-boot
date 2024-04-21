@@ -6,6 +6,16 @@ We are going to create a restful API using Java and Spring Boot. We will use Git
 
 For writing the code and documentation, I am getting help from GitHub Copilot. 
 
+## What is GitHub Copilot?
+
+GitHub Copilot is an AI pair programmer that helps you write code faster. It is available as IDE extensions. It is also available in other IDEs. You can learn more about GitHub Copilot [here](https://docs.github.com/en/copilot/using-github-copilot/getting-started-with-github-copilot).
+
+There are 2 types of copilot extensions:
+- GitHub Copilot for in-editor suggestions
+- GitHub Copilot for chat suggestions
+
+
+
 
 ## Java Application overview
 
@@ -16,6 +26,12 @@ This is a Java Spring Boot application. The application has following depndencie
 - h2 Database
   
 in the branch `api` we will create a restful API that will allow us to create, read, update and delete employees from a database. 
+
+## Using Spring Boot Initializr to generate the application structure?
+
+<img width="1608" alt="image" src="https://github.com/snsinahub-org/copilot-java-spring-boot/assets/90400593/ca7fdb8b-9e09-44dd-b07b-2ad0caf3eba6">
+
+I utilized the [Spring Boot Initializr](https://start.spring.io/) t) to generate the structure of this application. This tool provides a straightforward web UI that enables you to configure your application's foundational aspects. Within the web UI, you have the option to specify the language, project type, Spring Boot version, and add the necessary dependencies. 
 
 ## How Copilot helped me to write the code?
 
@@ -28,7 +44,7 @@ I used these 2 methods to get help from Copilot:
 
 ### Copilot suggestions in the editor
 
-There are following ways Copilot suggests code in the editor:
+Copilot suggests code in the editor in the following ways:
 
 1. When I write a comment, Copilot suggests code based on the comment.
 2. When I write a method, Copilot suggests the method body.
@@ -41,7 +57,7 @@ There are following ways Copilot suggests code in the editor:
 
 ### Copilot suggestions in the chat
 
-I asked questions and Copilot suggested code based on the question.
+I can ask questions and Copilot suggested code based on the question. very similar to the in-editor suggestions.
 
 ## Pre-requisites
 
@@ -60,5 +76,7 @@ Most of suggested codes are in-editor suggestions, I use comments to get suggest
 
 You can follow the instructions in [Getting Started](docs/tutorials/README.md). 
 
+## Accepting, rejecting or modifying Copilot suggestions
 
+You have freedom to accept or deny the suggested code, or modify the code either manually or ask Copilot to modify it itself.
 
